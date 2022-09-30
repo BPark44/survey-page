@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheet  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+
+    <title>📊 Survey</title>
+</head>
+<body>
+
+    
+
+    <form id="form">
+        <h1>👋 Welcome to our Survey!</h1>
+
+        <!-- Name -->
+        <div class="form-control">
+            <label for="first-name" id="label-name">
+                First Name
+            </label>
+
+            <input 
+                type="text"
+                id="first-name"
+                placeholder="Enter your first name"
+            >
+        </div>
+        
+        <div class="form-control">    
+            <label for="last-name" id="label-name">
+                Last Name
+            </label>
+
+            <input 
+                type="text"
+                id="last-name"
+                placeholder="Enter your last name"
+            >
+        </div>
+
+        <!-- Contact Details -->
+        <div class="form-control contact">
+            <label for="email" id="label-email">
+                Email
+            </label>
+
+            <input 
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+            >
+        </div>
+
+        <div class="form-control contact">
+            <label for="number" id="label-number">
+                Phone Number
+            </label>
+
+            <input 
+                type="text"
+                id="number"
+                placeholder="Enter your phone number"
+            >
+        </div>
+
+        <div class="form-control">
+            <label for="shopper" id="label-shopper">
+                Which of the below best describes your shopping habits?
+            </label>
+
+            <!-- Dropdown Menu -->
+            <select name="shopper" id="shopper">
+                <option value="Ocasional">Ocasional</option>
+                <option value="Frequent">Frequent</option>
+                <option value="Constant">Constant</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <label>
+                Which shopping method do you prefer?
+            </label>
+
+            <!-- Radio Buttons -->
+            <label for="option-1">
+                In-Store
+                <input 
+                    type="radio"
+                    id="option-1"
+                    name="option"    
+                >
+            </label>
+            <label for="option-2">
+                Online
+                <input 
+                    type="radio"
+                    id="option-2"
+                    name="option"    
+                >
+            </label>
+            <label for="option-3">
+                Click & Collect
+                <input 
+                    type="radio"
+                    id="option-3"
+                    name="option"
+                >
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label> What do you mainly shop for?
+                <small>(Please check all that apply)</small>
+            </label>
+            <!-- Checkboxes -->
+            <label for="input-1">
+                <input type="checkbox" name="input" id="">Clothing
+            </label>
+            <label for="input-2">
+                <input type="checkbox" name="input" id="">Electronics
+            </label>
+            <label for="input-3">
+                <input type="checkbox" name="input" id="">Food
+            </label>
+            <label for="input-4">
+                <input type="checkbox" name="input" id="">Homewares
+            </label>
+            <label for="input-5">
+                <input type="checkbox" name="input" id="">Automotive
+            </label>
+            <label for="input-6">
+                <input type="checkbox" name="input" id="">Travel
+            </label>
+            <label for="input-7">
+                <input type="checkbox" name="input" id="">Other
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label for="comment">
+                Please add any additional information below
+            </label>
+            <!-- Multi line text input  -->
+            <textarea name="comment" id="comment" placeholder="Enter your comment here"></textarea>
+        </div>
+
+        <button type="submit" value="submit">
+            Submit
+        </button>
+
+    </form>
+    
+</body>
+</html>
